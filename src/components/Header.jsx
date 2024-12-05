@@ -30,7 +30,7 @@ const Header = ()=>{
     ];
     return(
         <>
-        <header className="shadow-md">
+        <header className="header">
         <div className="container mx-auto flex items-center justify-between py-6 px-6">
             <div className="flex-shrink-0">
                 <Link to="/">

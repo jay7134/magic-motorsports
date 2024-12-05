@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 0px;
 }
+section{
+  padding: 0px 15px;
+}
 .container{
   max-width: 1920px;
+  margin: 0 auto;
 }
