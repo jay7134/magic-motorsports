@@ -1,6 +1,6 @@
 const Testimonials = ()=>{
     return(
-        <section className="bg-white">
+        <section className="bg-[#F8F8FA]">
             <div className="container py-[100px]">
                 <h2>Customer testimonials</h2>
                 <p>Hear from those who found their dream cars through our auctions</p>

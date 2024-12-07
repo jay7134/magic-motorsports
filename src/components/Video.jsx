@@ -7,7 +7,7 @@ const Video = ()=>{
     }
 
     return(
-        <section>
+        <section className="bg-[#EFF1F8]">
             <div className="container overflow-hidden">
                 <h2 className="text-h2 text-[#101828] font-[600] leading-[62px] max-w-[768px]">How to Import Your JDM Dream Car</h2>
                 <p className="text-normal text-[#475467] font-[400]">Watch Our Step-by-Step Guide to Navigating the Import Process</p>

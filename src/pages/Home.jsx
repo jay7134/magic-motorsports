@@ -5,6 +5,10 @@ import Layout from "../components/Layout";
 import Services from "../components/Services";
 import Video from "../components/Video";
 import Auction from "../components/Auction";
+import Inspection from "../components/Inspection";
+import Purchase from "../components/Purchase";
+import Testimonials from "../components/Testimonials";
+import ViewAuctions from "../components/ViewAuctions";
 
 const Home = ()=>{
     return(
@@ -12,7 +16,7 @@ const Home = ()=>{
         <Layout>
             <section id="hero" className="relative flex items-center justify-center overflow-hidden">
                 
-                <div className="container grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-between pt-[110px] pb-[80px] px-6 relative z-10 my-10">
+                <div className="container grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-between pt-[110px] pb-[80px] px-6 relative z-10 my-10 animate__animated animate__fadeIn">
                     <div className="absolute inset-0 w-full h-full rounded-[30px] overflow-hidden z-[-1]">
                         <img
                             decoding="async"
@@ -28,10 +32,10 @@ const Home = ()=>{
                         
                     </div>
                     <div className="text-left">
-                        <h1 className="text-h1 md:text-h1 font-bold text-white">Discover a New Level of Comfort</h1>
-                        <p className="text-normal text-white font-[400] py-4 m-w-[610]">Magic Motorsports imports authentic Japanese Domestic Market (JDM) vehicles. We handle everything from inspections to paperwork, ensuring compliance with U.S. regulations. Explore our inventory and Japanese auctions to find your perfect car</p>
-                        <div className="flex flex-row gap-4 pt-6">
-                            <button className="text-white text-sm font-[400] leading-[21px] bg-[#4A0CB6] rounded-lg px-5 h-[48px]">Discover More</button>
+                        <h1 className="text-h1 md:text-h1 font-bold text-white animate__animated animate__fadeInUp">Discover a New Level of Comfort</h1>
+                        <p className="text-normal text-white font-[400] py-4 m-w-[610] animate__animated animate__fadeInUp">Magic Motorsports imports authentic Japanese Domestic Market (JDM) vehicles. We handle everything from inspections to paperwork, ensuring compliance with U.S. regulations. Explore our inventory and Japanese auctions to find your perfect car</p>
+                        <div className="flex flex-row gap-4 pt-6 animate__animated animate__fadeInUp">
+                            <button className="text-white text-sm font-[400] leading-[21px] bg-[#4A0CB6] transition duration-300 hover:bg-[#5e12e3] rounded-lg px-5 h-[48px]">Discover More</button>
                             <Link to="/contact-us">
                                 <button className="text-[#D6BBFB] hover:text-black transition duration-300 text-sm font-[400] leading-[21px] border-2 border-[#D6BBFB] hover:bg-[#D6BBFB] rounded-lg  px-5 h-[48px]">Contact Us</button>
                             </Link>
@@ -39,6 +43,7 @@ const Home = ()=>{
                     </div>
                     <div className="relative rounded-[20px] border-2 p-8 max-w-[522px] overflow-hidden">
                         <div className="absolute bg-white bg-opacity-20 [backdrop-filter:blur(3.98px)] w-full h-full top-0 left-0 z-[-1]"></div>
+                        <div className="animate__animated animate__fadeInUp">
                         <h2 className="text-white text-[32px] leading-[37px] font-[600] max-w-[360px]">What car are you looking for?</h2>
                         <form className="pt-4">
                             <div className="mb-[10px]">
@@ -124,6 +129,7 @@ const Home = ()=>{
                             </div>
                         </form>
                     </div>
+                    </div>
                 </div>
 
             </section>
@@ -174,119 +180,13 @@ const Home = ()=>{
             </section>
 
             <Auction/>
-
-            <section>
-                <div className="container flex flex-col md:flex-row justify-between gap-20 py-[100px]">
-                    <div className="w-1/2 relative">
-                        <img 
-                            src="../images/img1211.jpg"
-                            alt=""
-                            className="absolute w-full h-full object-cover"
-                        />
-                        <div className="bg-white w-[400px] m-8">
-
-                        </div>
-                    </div>
-                    <div className="w-1/2">
-                        <span className="bg-[#D583E9] px-3 py-2 rounded-md ">auction</span>
-                        <h2>Bid on Your Dream JDM Vehicle</h2>
-                        <p>Discover a wide selection of authentic JDM cars directly from Japanese auctions. Enjoy transparent bidding with detailed reports, competitive prices, and expert support. Let us handle the logistics while you focus on choosing your perfect ride.</p>
-                        <div className="flex">
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section>
-                <div className="container flex flex-col md:flex-row justify-between gap-20 py-[100px]">
-                    <div className="w-1/2">
-                        <span className="bg-[#D583E9] px-3 py-2 rounded-md ">auction</span>
-                        <h2>Bid on Your Dream JDM Vehicle</h2>
-                        <p>Discover a wide selection of authentic JDM cars directly from Japanese auctions. Enjoy transparent bidding with detailed reports, competitive prices, and expert support. Let us handle the logistics while you focus on choosing your perfect ride.</p>
-                        <div className="flex">
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                            <div className="flex flex-row gap-4">
-                                <img 
-                                    src="../images/icon-received.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4>Wide Selection</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-1/2 relative">
-                        <img 
-                            src="../images/img1211.jpg"
-                            alt=""
-                            className="absolute w-full h-full object-cover"
-                        />
-                        <div className="bg-white w-[400px] m-8">
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <Inspection/>
+            <Purchase/>
             <Video/>
             <Services/>
             <FeaturedInventory/>
+            <Testimonials/>
+            <ViewAuctions/>
             <Faqs/>
         </Layout>
 
