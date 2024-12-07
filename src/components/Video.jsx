@@ -7,12 +7,12 @@ const Video = ()=>{
     }
 
     return(
-        <section className="bg-[#EFF1F8]">
-            <div className="container overflow-hidden">
+        <section className="relative bg-[#EFF1F8] pb-[100px]">
+            <div className="container">
                 <h2 className="text-h2 text-[#101828] font-[600] leading-[62px] max-w-[768px]">How to Import Your JDM Dream Car</h2>
                 <p className="text-normal text-[#475467] font-[400]">Watch Our Step-by-Step Guide to Navigating the Import Process</p>
-                <div className="block grid grid-cols bg-gray-100">
-                    <div className="relative w-full max-w-[1280px] max-h-[500px]">
+                <div className="grid grid-cols">
+                    <div className=" w-full max-w-[1280px] max-h-[500px]">
                         {!isPlaying ? (
                         // Thumbnail with Play Icon
                         <div

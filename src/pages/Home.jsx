@@ -9,6 +9,7 @@ import Inspection from "../components/Inspection";
 import Purchase from "../components/Purchase";
 import Testimonials from "../components/Testimonials";
 import ViewAuctions from "../components/ViewAuctions";
+import JDMDelivery from "../components/JDMDelivery";
 
 const Home = ()=>{
     return(
@@ -184,6 +185,7 @@ const Home = ()=>{
             <Purchase/>
             <Video/>
             <Services/>
+            <JDMDelivery/>
             <FeaturedInventory/>
             <Testimonials/>
             <ViewAuctions/>

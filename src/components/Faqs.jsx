@@ -38,27 +38,30 @@ const Faqs = ()=>{
     return(
         <section className="bg-white">
             <div className="container py-[100px]">
-                <h2 className="text-center text-2xl font-[600] pb-12">FAQs</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 divide-y">
-                    {
+            <h2 className="text-h2 text-[#101828] leading-[62px] font-[600] text-center">FAQs</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[64px] pt-[50px]">
+                    { 
                         faqs.map((faq, index)=>(
                             <div 
                                 key={index} 
-                                className="cursor-pointer"
+                                className={`cursor-pointer w-full relative transition duration-300 py-[12px] border-b-[1px] border-[rgba(0, 0, 0, 0.2)] ${
+                                    (index == 0 || index == (faqs.length)%2 ) ? 'border-t-[1px]' : '' 
+                                }`}
                                 onClick={() => toggleFAQ(index)}    
                             >
-                                <h4>{faq.question}
+                                <h4 className="text-normal text-black font-[600] pr-[50px]">{faq.question}</h4>
+                                <i className={`absolute top-[2px] text-[28px] right-[10px] transition-transform ${
+                                    openIndex === index ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"
+                                }`}></i>
                                 
-                                    <i className={`${
-                                        openIndex === index ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"
-                                    }`}></i>
+                                <div
+                                    className={`transition-all duration-300 easein overflow-hidden ${
+                                      openIndex === index ? "opacity-100" : "max-h-0 opacity-0"
+                                    }`}
+                                  >
+                                    <p className="mt-2">{faq.answer}</p>
+                                </div>
                                 
-                                </h4>
-                                {
-                                    openIndex === index && (
-                                        <p className="animate__animated animate__fadeInDown">{faq.answer}</p>
-                                    )
-                                }
                             </div>
                         ))
                     }
