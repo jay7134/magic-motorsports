@@ -4,6 +4,7 @@ import FeaturedInventory from "../components/FeaturedInventory";
 import Layout from "../components/Layout";
 import Services from "../components/Services";
 import Video from "../components/Video";
+import Auction from "../components/Auction";
 
 const Home = ()=>{
     return(
@@ -11,7 +12,7 @@ const Home = ()=>{
         <Layout>
             <section id="hero" className="relative flex items-center justify-center overflow-hidden">
                 
-                <div className="container grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-between py-[120px] px-6 relative z-10 my-10">
+                <div className="container grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-between pt-[110px] pb-[80px] px-6 relative z-10 my-10">
                     <div className="absolute inset-0 w-full h-full rounded-[30px] overflow-hidden z-[-1]">
                         <img
                             decoding="async"
@@ -36,33 +37,88 @@ const Home = ()=>{
                             </Link>
                         </div>
                     </div>
-                    <div className="relative bg-white bg-opacity-20 rounded-[20px] border-2 p-8 max-w-[522px] backdrop-sepia-0">
-                        <div className="absolute w-full h-full top-0 blur-xl"></div>
-                        <h2 className="text-white text-[32px] leading-[37px] font-[600]">What car are you looking for?</h2>
-                        <form>
-                            <div className="flex">
-                                <label>Make</label>
-                                <select>
-                                    <option>Toyota</option>
-                                    <option>Suzuki</option>
-                                    <option>Honda</option>
+                    <div className="relative rounded-[20px] border-2 p-8 max-w-[522px] overflow-hidden">
+                        <div className="absolute bg-white bg-opacity-20 [backdrop-filter:blur(3.98px)] w-full h-full top-0 left-0 z-[-1]"></div>
+                        <h2 className="text-white text-[32px] leading-[37px] font-[600] max-w-[360px]">What car are you looking for?</h2>
+                        <form className="pt-4">
+                            <div className="mb-[10px]">
+                                <label className="text-white font-sm font-[500] leading-[24px]">Make</label>
+                                <select className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[5px]">
+                                    <option className="text-sm font-[400] text-black">Select cars</option>
+                                    <option className="text-sm font-[400] text-black">Toyota</option>
+                                    <option className="text-sm font-[400] text-black">Suzuki</option>
+                                    <option className="text-sm font-[400] text-black">Honda</option>
                                 </select>
                             </div>
-                            <div className="flex flex-row gap-4">
-                                <div>
-                                    <label>Model</label>
-                                    <select>
-                                        <option>2024</option>
-                                        <option>2023</option>
-                                        <option>2022</option>
+                            <div className="grid grid-cols sm:grid-cols-2 gap-4">
+                                <div className="mb-[10px]">
+                                    <label className="text-white font-sm font-[500] leading-[24px]">Model</label>
+                                    <select className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[5px]">
+                                    <option className="text-sm font-[400] text-black">Select model</option>
+                                        <option className="text-sm font-[400] text-black">2024</option>
+                                        <option className="text-sm font-[400] text-black">2023</option>
+                                        <option className="text-sm font-[400] text-black">2022</option>
                                     </select>
                                 </div>
-                                <div>
-                                    <label>Grade</label>
-                                    <select>
-                                        <option>5</option>
-                                        <option>4</option>
-                                        <option>3</option>
+                                <div className="mb-[10px]">
+                                    <label className="text-white font-sm font-[500] leading-[24px]">Grade</label>
+                                    <select className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[5px]">
+                                    <option className="text-sm font-[400] text-black">Select grade</option>
+                                        <option className="text-sm font-[400] text-black">5</option>
+                                        <option className="text-sm font-[400] text-black">4</option>
+                                        <option className="text-sm font-[400] text-black">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols">
+                                <label className="text-white font-sm font-[500] leading-[24px]">Year</label>
+                                <div className="grid grid-cols sm:grid-cols-2 gap-4">
+                                    <div className="mb-[10px] relative">
+                                        <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                            <i className="ri-calendar-line text-white"></i>
+                                        </span>
+                                        <input 
+                                            type="number"
+                                            
+                                            placeholder="2020"
+                                            min="2000"
+                                            max="2025"
+                                            className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[5px] pl-10"
+                                        />
+                                        
+                                    </div>
+                                    <div className="mb-[10px] relative">
+                                        
+                                    <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                            <i className="ri-calendar-line text-white"></i>
+                                        </span>
+                                        <input 
+                                            type="number"
+                                            
+                                            placeholder="2024"
+                                            min="2000"
+                                            max="2025"
+                                            className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[5px] pl-10"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols sm:grid-cols-2 gap-4">
+                                <div className="mb-[10px]">
+                                    <label className="text-white font-sm font-[500] leading-[24px]">Color</label>
+                                    <select className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[5px]">
+                                    <option className="text-sm font-[400] text-black">Select color</option>
+                                        <option className="text-sm font-[400] text-black">White</option>
+                                        <option className="text-sm font-[400] text-black">Black</option>
+                                        <option className="text-sm font-[400] text-black">Grey</option>
+                                    </select>
+                                </div>
+                                <div className="mb-[10px]">
+                                    <label className="text-white font-sm font-[500] leading-[24px]">Transmission</label>
+                                    <select className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[5px]">
+                                    <option className="text-sm font-[400] text-black">Select transmission</option>
+                                        <option className="text-sm font-[400] text-black">Automatic</option>
+                                        <option className="text-sm font-[400] text-black">Manual</option>
                                     </select>
                                 </div>
                             </div>
@@ -117,95 +173,7 @@ const Home = ()=>{
 
             </section>
 
-            <section className="bg-[#EFF1F8] pt-[24px] py-[100px]">
-                <div className="container rounded-t-[24px] grid grid-cols md:grid-cols-2 justify-between gap-10 pt-[60px] px-[56px]"
-                    style={
-                        {
-                            background: 'linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)'
-                        }
-                    }
-                >
-                    <div className="max-w[580px]">
-                        <span className="bg-[#D583E9] bg-opacity-20 text-[#D583E9] px-3 py-2 rounded-md ">auction</span>
-                        <h2 className="text-h2 text-[#101828] leading-[62px] font-[600] max-w-[550px] pt-[20px]">Bid on Your Dream JDM Vehicle</h2>
-                        <p className="text-normal text-[#475467] font-[400] py-[24px]">Discover a wide selection of authentic JDM cars directly from Japanese auctions. Enjoy transparent bidding with detailed reports, competitive prices, and expert support. Let us handle the logistics while you focus on choosing your perfect ride.</p>
-                        <div className="grid grid-cols sm:grid-cols-2 gap-[24px] pt-[16px] pb-[32px]">
-                            <div className="flex flex-row items-center gap-[16px]">
-                                <img 
-                                    src="../images/f1.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4 className="text-[14px] text-[#475467] font-[400]">Wide Selection</h4>
-                            </div>
-                            <div className="flex flex-row items-center gap-[16px]">
-                                <img 
-                                    src="../images/f2.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4 className="text-[14px] text-[#475467] font-[400]">Competitive Prices</h4>
-                            </div>
-                            <div className="flex flex-row items-center gap-[16px]">
-                                <img 
-                                    src="../images/f3.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4 className="text-[14px] text-[#475467] font-[400]">Transparency</h4>
-                            </div>
-                            <div className="flex flex-row items-center gap-[16px]">
-                                <img 
-                                    src="../images/f4.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4 className="text-[14px] text-[#475467] font-[400]">Expert Support</h4>
-                            </div>
-                            <div className="flex flex-row items-center gap-[16px]">
-                                <img 
-                                    src="../images/f5.svg" alt="" 
-                                    className="w-[48px] h-[48px]"
-                                    aria-hidden="true"    
-                                />
-                                <h4 className="text-[14px] text-[#475467] font-[400]">Easy Process</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative">
-                        <img 
-                            src="../images/img1211.jpg"
-                            alt=""
-                            className="absolute w-full h-full object-cover rounded-[12px]"
-                        />
-                        <div className="bg-white w-[400px]">
-                            <div>
-                                <img src="" 
-                                    className=""
-                                />
-                                <div>
-                                    <span className="">17,000km</span>
-                                    <h4 className="">1996 NISSAN SERENA 4D FX</h4>
-                                    <div>
-                                        <div className="">
-                                            <div>
-                                                <img src=""/>
-                                                <span className="">Bid No: No.60020</span>
-                                            </div>
-                                            <span>Grade: 4</span>
-                                        </div>
-                                    </div>
-                                    <div className="divide-y divide-blue-200"></div>
-                                    <div className="">
-                                        <button>View Details</button>
-                                        <button>Add favorite</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Auction/>
 
             <section>
                 <div className="container flex flex-col md:flex-row justify-between gap-20 py-[100px]">
