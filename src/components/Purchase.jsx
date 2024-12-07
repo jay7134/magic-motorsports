@@ -73,7 +73,7 @@ const Purchase = ()=>{
                 </div>
                 <div className="relative flex items-end">
                     <img 
-                        src="../images/img1211.jpg"
+                        src="../images/purchases.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover rounded-[12px]"
                     />

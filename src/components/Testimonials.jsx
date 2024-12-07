@@ -1,24 +1,28 @@
 const Testimonials = ()=>{
     return(
         <section className="bg-[#F8F8FA]">
-            <div className="container py-[100px]">
-                <h2>Customer testimonials</h2>
-                <p>Hear from those who found their dream cars through our auctions</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <div className="container py-[96px]">
+                <h2 className="text-h2 text-[#101828] leading-[62px] font-[600] max-w-[650px]">Customer testimonials</h2>
+                <p className="text-normal text-[#475467] font-[400] py-[12px]">Hear from those who found their dream cars through our auctions</p>
+                    
+                <div className="flex flex-cols md:flex-cols-2 gap-[44px] items-center pt-[40px]">
+                    <img 
+                        src="../images/testimonial-1.jpg" alt="customer testimonials"
+                        className="w-full max-w-[340px] h-full rounded-[16px]"
+                    />
                     <div className="">
-                        <h2 className="text-white text-[40px] font-[600]">Our Services</h2>
-                        <p className="text-white text-sm font-[400]">Explore our full range of services designed to make your JDM vehicle purchase smooth and worry-free. From initial inspections to secure purchases and timely delivery, we take care of every detail, ensuring a seamless experience from start to finish. Trust our expertise to guide you through each step, so you can focus on enjoying your new ride.</p>
-                    </div>
-                    <div className="">
+                        
                         <div className="">
-                            <i className="ri-star-fill"></i>
-                            <i className="ri-star-fill"></i>
-                            <i className="ri-star-fill"></i>
-                            <i className="ri-star-fill"></i>
-                            <i className="ri-star-fill"></i>
+                            <div className="text-xl gap-4">
+                                <i className="ri-star-fill text-yellow-400"></i>
+                                <i className="ri-star-fill text-yellow-400"></i>
+                                <i className="ri-star-fill text-yellow-400"></i>
+                                <i className="ri-star-fill text-yellow-400"></i>
+                                <i className="ri-star-fill text-yellow-400"></i>
+                            </div>
+                            <p className="text-[28px] text-[#101828] leading-[42px] font-[500] pt-[24px] pb-[32px] tracking-[0px]">“This is a great, honest, and very solid import company that isn't going to screw you over and they're great at doing what they do. 10/5 stars and it was a great experience getting everything together and finally receiving the car. I greatly appreciate Conor and Magic MotorSports!”</p>
+                            <p>— Alberto Calderon</p>
                         </div>
-                        <p>“This is a great, honest, and very solid import company that isn't going to screw you over and they're great at doing what they do. 10/5 stars and it was a great experience getting everything together and finally receiving the car. I greatly appreciate Conor and Magic MotorSports!”</p>
-                        <p>— Alberto Calderon</p>
                     </div>
                 </div>
             </div>
