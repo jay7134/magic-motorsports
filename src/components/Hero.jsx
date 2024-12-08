@@ -3,7 +3,7 @@ const Hero = ()=>{
     return(
         <section id="hero" className="relative flex items-center justify-center overflow-hidden">
                 
-            <div className="container grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-between pt-[110px] pb-[80px] px-6 relative z-10 my-10 animate__animated animate__fadeIn">
+            <div className="container grid grid-cols-1 md:grid-cols-2 gap-18 items-center justify-between pt-[110px] pb-[80px] px-6 relative z-10 my-10 animate__animated animate__fadeIn">
                 <div className="absolute inset-0 w-full h-full rounded-[30px] overflow-hidden z-[-1]">
                     <img
                         decoding="async"
@@ -18,7 +18,7 @@ const Hero = ()=>{
                 }}></div>
                     
                 </div>
-                <div className="text-left">
+                <div className="text-left md:pl-[20px]">
                     <h1 className="text-[40px] leading-[48px] md:text-h1 md:text-h1 font-bold text-white animate__animated animate__fadeInUp">Discover a New Level of Comfort</h1>
                     <p className="text-[13px] md:text-normal text-white font-[400] py-4 m-w-[610] animate__animated animate__fadeInUp">Magic Motorsports imports authentic Japanese Domestic Market (JDM) vehicles. We handle everything from inspections to paperwork, ensuring compliance with U.S. regulations. Explore our inventory and Japanese auctions to find your perfect car</p>
                     <div className="flex flex-col md:flex-row gap-4 pt-6 animate__animated animate__fadeInUp">
