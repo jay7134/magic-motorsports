@@ -35,6 +35,10 @@ export default {
         'h3': '2.5rem', // 40px
         'h4': '1.2rem', // 20px
       },
+      backgroundImage: {
+        'black-gradient': 'background: linear-gradient(180deg, rgba(0, 0, 0, 0) 17.67%, rgba(0, 0, 0, 0.7) 86.4%)',
+        'custom-gradient': 'linear-gradient(128.63deg, rgba(255, 255, 255, 0) 27.79%, rgba(255, 255, 255, 0.15) 94.8%)',
+      },
     },
   },
   plugins: [],

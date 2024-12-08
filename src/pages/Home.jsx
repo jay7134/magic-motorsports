@@ -139,7 +139,7 @@ const Home = ()=>{
                 <div className="container pt-[80px] pb-[50px]">
                     <h2 className="text-h2 text-[#101828] font-[600] leading-[67px] max-w-[590px]">Your Journey to Owning a JDM Vehicle</h2>
                     <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-[24px] py-10">
-                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)]">
+                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
                             <img 
                                 src="../images/icon-globe.svg" alt="" 
                                 className="w-[48px] h-[48px]"
@@ -148,7 +148,7 @@ const Home = ()=>{
                             <h4 className="text-lg font-[600] text-[#101828] py-3">Browse Inventory</h4>
                             <p className="text-sm font-[400] text-[#475467] leading-[24px]">Explore our extensive selection of JDM vehicles or participate in Japanese auctions to find your perfect car.</p>
                         </div>
-                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)]">
+                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
                             <img 
                                 src="../images/icon-vehicle.svg" alt="" 
                                 className="w-[48px] h-[48px]"
@@ -157,7 +157,7 @@ const Home = ()=>{
                             <h4 className="text-lg font-[600] text-[#101828] py-3">Vehicle Selection</h4>
                             <p className="text-sm font-[400] text-[#475467] leading-[24px]">Choose your desired vehicle and request a detailed pre-purchase inspection.</p>
                         </div>
-                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)]">
+                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
                             <img 
                                 src="../images/icon-ship.svg" alt="" 
                                 className="w-[48px] h-[48px]"
@@ -166,7 +166,7 @@ const Home = ()=>{
                             <h4 className="text-lg font-[600] text-[#101828] py-3">Purchase and Import</h4>
                             <p className="text-sm font-[400] text-[#475467] leading-[24px]">We handle all import paperwork and ensure your vehicle meets U.S. regulations.</p>
                         </div>
-                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)]">
+                        <div className="bg-white p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
                             <img 
                                 src="../images/icon-received.svg" alt="" 
                                 className="w-[48px] h-[48px]"
