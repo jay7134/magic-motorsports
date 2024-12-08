@@ -115,7 +115,7 @@ const Hero = ()=>{
                             </div>
                         </div>
                         <div className="grid grid-cols ">
-                            <button className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[10px]">SUBMIT</button>
+                            <button className="text-sm font-[400] block bg-transparent border boreder-[1px] border-white w-full outline-none text-white py-2 px-2 rounded-[8px] mt-[10px] hover:bg-white">SUBMIT</button>
                         </div>
                     </form>
                 </div>

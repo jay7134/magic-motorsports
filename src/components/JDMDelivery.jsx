@@ -33,7 +33,7 @@ const JDMDelivery = ()=>{
                         <h4 className="text-[20px] text-white leading-[28px] font-[700] py-[16px]">Transparent Pricing</h4>
                         <p className="text-white text-[14px] font-[400]">We believe in full transparency. The price you see is the total cost, making it effortless to own your dream JDM vehicle.</p>
                     </div>
-                    <div className="relative border-[1px] md:border-r-[0px] md:border-l-[1px] md:border-t-[0px] md:border-b-[0px] border-[rgba(255,255,255,0.4)] p-[15px] md:p-[40px] rounded-[8px] md:rounded-[0px] mb-[16px] md:mb-[0px]">
+                    <div className="relative border-[1px] md:border-r-[1px] md:border-l-[1px] md:border-t-[0px] md:border-b-[0px] border-[rgba(255,255,255,0.4)] p-[15px] md:p-[40px] rounded-[8px] md:rounded-[0px] mb-[16px] md:mb-[0px]">
                         <div className="absolute custom-gradient [backdrop-filter:blur(3px)] w-full h-full top-0 left-0 z-[-1]"></div>
                         <h4 className="text-[20px] text-white leading-[28px] font-[700] py-[16px]">Versatile Import Options</h4>
                         <p className="text-white text-[14px] font-[400]">We specialize in importing vehicles that are 25 years or older, ensuring compliance with U.S. regulations. Got your eye on a newer model? We've got storage solutions until your dream car is eligible for import.</p>
