@@ -4,7 +4,7 @@ const Footer = ()=>{
     return(
         <footer className="bg-[#0C111D] py-8">
             <div className="container mx-auto flex items-center justify-between py-6 px-6">
-                <div className="bg-white bg-opacity-10 rounded-xl px-[48px] py-[48px] items-center flex flex-col md:flex-row md:w-full gap-8">
+                <div className="bg-white bg-opacity-10 rounded-xl px-[15px] md:px-[48px] py-[48px] items-center flex flex-col md:flex-row md:w-full gap-8">
                     <div className="w-full md:w-9/12">
                         <img src="../images/logo.svg" alt="Magic Motorsports" className="m-w-[147]"/>
                         <h4 className="text-white text-mormal font-[600] pt-4 pb-2">Subscribe</h4>
@@ -31,11 +31,11 @@ const Footer = ()=>{
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto flex items-center justify-between gap-8 py-2 px-6">
+            <div className="container mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8 py-2 px-6">
                 <p className="text-white text-[14px] font-[400]">&copy; Copyright 2024 All Rights Reserved Magic Motorsports</p>
 
                 <nav className="text-white text-sm">
-                    <ul className="flex space-x-4">
+                    <ul className="flex flex-col md:flex-row gap-[18px] md:gap-[12px]">
                         <li className="text-[14px] font-[400] underline">
                             <Link>Privacy Policy</Link>
                         </li>

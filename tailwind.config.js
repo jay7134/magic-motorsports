@@ -22,12 +22,12 @@ export default {
         'xs-sm': '0.813rem', // 13px
         'sm': ['1rem',{
             lineHeight: '1.5rem',
-            fontWeight: '500',
+            fontWeight: '400',
         }], // 16px
         'normal': [
           '1.1rem', {
             lineHeight: '1.68rem',
-            fontWeight: '500',
+            fontWeight: '400',
           }
         ], // 18px
         'h1': ['4.5rem',{lineHeight: '5.4rem',}], // 72px

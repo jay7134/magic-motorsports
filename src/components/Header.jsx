@@ -13,7 +13,7 @@ const Header = ()=>{
         },
         {
             title:"Japanese Auctions",
-            to:'/japanese-autions',
+            to:'/japanese-auctions',
         },
         {
             title:"Inventory",
@@ -43,7 +43,7 @@ const Header = ()=>{
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-4">
+            <nav className="hidden lg:flex space-x-4">
             {
                 menu.map((item,index)=>(
                     <NavLink
@@ -59,7 +59,7 @@ const Header = ()=>{
             </nav>
 
             {/* Buttons */}
-            <div className="flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-4">
             <button className="text-purple font-[600] px-6 py-3 rounded-lg shadow-2sm transition duration-300 hover:bg-purple hover:text-white border-2 border-purple">
                 Contact us
             </button>
@@ -71,7 +71,7 @@ const Header = ()=>{
             {/* Mobile Menu Button */}
             <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="md:hidden text-gray-700 focus:outline-none"
+                className="lg:hidden text-gray-700 focus:outline-none"
                 aria-label="Toggle menu"
             >
             <svg
@@ -91,8 +91,14 @@ const Header = ()=>{
             </button>
         </div>
         {/* Mobile Navigation */}
+        { /*className="lg:hidden bg-[#EFF1F8] px-6 pb-4 overflow-hidden transition-all duration-500" */}
         {isMenuOpen && (
-            <div className="md:hidden bg-gray-100 px-6 pb-4">
+            <div 
+                className={`absolute top-[94px] left-0 z-[90] px-6 w-full bg-gray-100 shadow-md overflow-hidden transition-all duration-500 ${
+                    isMenuOpen ? "max-h-screen" : "max-h-0"
+                }`}    
+            >
+                <div className="text-right py-[20px]">
                 <nav className="space-y-4">
                     {
                         menu.map((item,index)=>(
@@ -105,14 +111,16 @@ const Header = ()=>{
                             </NavLink>
                         ))
                     }
+                    <Link to="/contact-us">
+                        <button className="max-w-[340px] mr-[15px] text-purple font-[600] px-6 py-3 rounded-lg shadow-2sm transition duration-300 hover:bg-purple hover:text-white border-2 border-purple">
+                            Contact Us
+                        </button>
+                    </Link>
+
+                    <button className="max-w-[340px] bg-purple text-white font-[600] px-6 py-3 rounded-lg shadow-2sm border-2 border-purple transition duration-300 hover:bg-purple-light">
+                        Log in/Sign Up
+                    </button>
                 </nav>
-                <div className="mt-4 flex flex-col space-y-4">
-                    <button className="text-gray-700 w-full py-2 rounded-md border border-gray-300 hover:bg-gray-200">
-                        Login
-                    </button>
-                    <button className="bg-blue-600 text-white w-full py-2 rounded-md hover:bg-blue-700">
-                        Sign Up
-                    </button>
                 </div>
             </div>
         )}

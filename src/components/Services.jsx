@@ -2,9 +2,9 @@ const Services = ()=>{
     return(
         <section className="bg-[#463467]">
             <div className="container grid grid-cols-1 lg:grid-cols-2 gap-6 py-[100px]">
-                <div className="max-w-[480px]">
-                    <h2 className="text-white text-h2 leading-[62px] font-[600]">Our Services</h2>
-                    <p className="text-white text-sm font-[400] py-[18px]">Explore our full range of services designed to make your JDM vehicle purchase smooth and worry-free. From initial inspections to secure purchases and timely delivery, we take care of every detail, ensuring a seamless experience from start to finish. Trust our expertise to guide you through each step, so you can focus on enjoying your new ride.</p>
+                <div className="md:max-w-[480px]">
+                    <h2 className="text-white text-[40px] leading-[48px] md:text-h2 md:leading-[62px] font-[600]">Our Services</h2>
+                    <p className="text-white text-[13px] leading-[19px] md:leading-[27px] md:text-sm font-[400] py-[18px]">Explore our full range of services designed to make your JDM vehicle purchase smooth and worry-free. From initial inspections to secure purchases and timely delivery, we take care of every detail, ensuring a seamless experience from start to finish. Trust our expertise to guide you through each step, so you can focus on enjoying your new ride.</p>
                 </div>
                 <div>
                     <div className="grid grid-cols md:grid-cols-2 gap-6">

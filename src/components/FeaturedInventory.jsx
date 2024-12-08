@@ -2,7 +2,7 @@ const FeaturedInventory = ()=>{
     return(
         <section id="featured-inventory" className="relative bg-white py-[100px] overflow-hidden">
             <div className="container">
-                <h2 className="text-h2 text-black leading-[62px] font-[600] text-center pb-[56px]">Featured inventory</h2>
+                <h2 className="text-[40px] leading-[48px] md:text-h2 md:leading-[62px] text-black font-[600] text-center pb-[56px]">Featured inventory</h2>
                 <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 justify-between space-around gap-[32px] overflow-hidden">
                     <div className="relative flex overflow-hidden items-end">
                         <img 
