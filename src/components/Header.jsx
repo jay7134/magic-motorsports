@@ -60,9 +60,11 @@ const Header = ()=>{
 
             {/* Buttons */}
             <div className="hidden lg:flex items-center space-x-4">
-            <button className="text-purple font-[600] px-6 py-3 rounded-lg shadow-2sm transition duration-300 hover:bg-purple hover:text-white border-2 border-purple">
-                Contact us
-            </button>
+            <Link to="/contact-us">    
+                <button className="text-purple font-[600] px-6 py-3 rounded-lg shadow-2sm transition duration-300 hover:bg-purple hover:text-white border-2 border-purple">
+                    Contact us
+                </button>
+            </Link>
             <button className="bg-purple text-white font-[600] px-6 py-3 rounded-lg shadow-2sm border-2 border-purple transition duration-300 hover:bg-purple-light">
                 Log in/Sign Up
             </button>
