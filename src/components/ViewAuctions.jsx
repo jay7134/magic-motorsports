@@ -1,7 +1,7 @@
 const ViewAuctions = ()=>{
     return(
         <section className="bg-[#D7D6D8] py-[80px]">
-            <div className="container grid grid-cols md:grid-cols-2 gap-[80px]">
+            <div className="container grid grid-cols md:grid-cols-2 items-center gap-[80px]">
                 
                 
                 <img src="../images/jdm-auction.jpg" alt="view auctions" className="w-full max-w-[658px] h-full rounded-[8px]"/>
