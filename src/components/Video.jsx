@@ -12,7 +12,7 @@ const Video = ()=>{
                 <h2 className="text-[40px] leading-[48px] md:text-h2 md:leading-[62px] text-[#101828] font-[600] max-w-[768px]">How to Import Your JDM Dream Car</h2>
                 <p className="text-[13px] leading-[19px] md:leading-[27px] md:text-normal text-[#475467] font-[400]">Watch Our Step-by-Step Guide to Navigating the Import Process</p>
                 <div className="grid grid-cols pt-[50px]">
-                    <div className=" w-full max-w-[1280px] max-h-[500px]">
+                    <div className=" w-full mx-auto max-w-[1280px] max-h-[500px]">
                         {!isPlaying ? (
                         // Thumbnail with Play Icon
                         <div
