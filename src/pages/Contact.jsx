@@ -7,7 +7,7 @@ const Contact = ()=>{
             <section className="bg-white px-0">
                 
                 <div className="container grid grid-cols md:grid-cols-2 gap-18 items-center relative z-10 my-10 animate__animated animate__fadeIn">
-                    <div className="px-[20px] md:px-[80px] py-[80px]">
+                    <div className="px-[20px] md:px-[80px] py-[40px] md:py-[80px]">
                         
                         <h1 className="text-[#101828] text-[40px] leading-[48px] md:text-h2 font-[700] animate__animated animate__fadeInUp">
                             Contact us
@@ -61,9 +61,9 @@ const Contact = ()=>{
                                     
                                     <select name="country" className="text-sm text-[#667085] font-[400] block bg-transparent w-[60px] outline-none py-2 px-2 rounded-[8px] mt-[5px]">
                                     
-                                        <option className="text-sm font-[400] text-black">US</option>
-                                        <option className="text-sm font-[400] text-black">UK</option>
-                                        <option className="text-sm font-[400] text-black">CA</option>
+                                        <option className="text-sm font-[400] text-black" value="US">US</option>
+                                        <option className="text-sm font-[400] text-black" value="UK">UK</option>
+                                        <option className="text-sm font-[400] text-black" value="CA">CA</option>
 
                                     </select>
                                 </div>
@@ -96,8 +96,7 @@ const Contact = ()=>{
                                         <input 
                                             type="checkbox" 
                                             name="agree"
-                                            className="text-sm text-[#667085] font-[400] bg-transparent border boreder-[1px] border-[#D0D5DD] w-[20px] h-[20px] outline-none py-2 px-2 rounded-[8px]"
-                                            placeholder="you@company.com"  
+                                            className="text-sm text-[#667085] font-[400] bg-transparent border boreder-[1px] border-[#D0D5DD] w-[20px] h-[20px] outline-none py-2 px-2 rounded-[8px]" 
                                         /> <span>You agree to our friendly privacy policy.</span>
                                     </label>
 
@@ -122,7 +121,7 @@ const Contact = ()=>{
 
             <ImportService/>
 
-            <section className="bg-white pt-[100px]">
+            <section className="bg-white pt-[52px] md:pt-[100px]">
                 
                 <div className="container grid grid-cols text-center">
                     <div>    
