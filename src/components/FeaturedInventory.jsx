@@ -1,9 +1,10 @@
-const FeaturedInventory = ()=>{
+const FeaturedInventory = ({title,desc})=>{
     return(
         <section id="featured-inventory" className="relative bg-white py-[100px] overflow-hidden">
             <div className="container">
-                <h2 className="text-[40px] leading-[48px] md:text-h2 md:leading-[62px] text-black font-[600] text-center pb-[56px]">Featured inventory</h2>
-                <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 justify-between space-around gap-[32px] overflow-hidden">
+                <h2 className="text-[40px] leading-[48px] md:text-h2 md:leading-[62px] text-black font-[600] text-center">{ title ? title : "Featured inventory" }</h2>
+                { desc ? <p className="pt-[12px] text-normal text-[#475467] font-[400] text-center">{desc}</p> : '' }
+                <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 justify-between space-around gap-[32px] overflow-hidden pt-[56px]">
                     <div className="relative flex overflow-hidden items-end">
                         <img 
                             src="../images/featured-1.jpg"

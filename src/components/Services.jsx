@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 const Services = ()=>{
     return(
         <section className="bg-[#463467]">
@@ -8,38 +10,12 @@ const Services = ()=>{
                 </div>
                 <div>
                     <div className="grid grid-cols md:grid-cols-2 gap-6">
-                    <div className="bg-white bg-opacity-20 p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
-                        <img src="../images/global.svg" 
-                            className="bg-white rounded-[12px] border-[2px] border-[#EAECF0] w-[52px] h-[52px] p-[12px] shadow-[0_1px_2px_0px_rgba(16,24,40,0.05)]"
-                            aria-hidden={true} 
-                        />
-                        <h4 className="text-white text-[20px] leading-[28px] font-[600] py-[16px]">Import</h4>
-                        <p className="text-white text-[14px] leading-[21px] font-[400]">Seamlessly import authentic JDM vehicles with our expert handling of all paperwork and compliance</p>
-                    </div>
-                    <div className="bg-white bg-opacity-20 p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
-                        <img src="../images/global.svg" 
-                            className="bg-white rounded-[12px] border-[2px] border-[#EAECF0] w-[52px] h-[52px] p-[12px] shadow-[0_1px_2px_0px_rgba(16,24,40,0.05)]"
-                            aria-hidden={true} 
-                        />
-                        <h4 className="text-white text-[20px] leading-[28px] font-[600] py-[16px]">JDM auctions</h4>
-                        <p className="text-white text-[14px] leading-[21px] font-[400]">Access exclusive Japanese auctions with our transparent bidding and inspection services.</p>
-                    </div>
-                    <div className="bg-white bg-opacity-20 p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
-                        <img src="../images/global.svg" 
-                            className="bg-white rounded-[12px] border-[2px] border-[#EAECF0] w-[52px] h-[52px] p-[12px] shadow-[0_1px_2px_0px_rgba(16,24,40,0.05)]"
-                            aria-hidden={true} 
-                        />
-                        <h4 className="text-white text-[20px] leading-[28px] font-[600] py-[16px]">Inventory</h4>
-                        <p className="text-white text-[14px] leading-[21px] font-[400]">Explore our curated selection of in-stock JDM vehicles, ready for immediate purchase</p>
-                    </div>
-                    <div className="bg-white bg-opacity-20 p-[24px] rounded-[12px] shadow-[0_12px_26px_0px_rgba(13,15,36,0.06)] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
-                        <img src="../images/global.svg" 
-                            className="bg-white rounded-[12px] border-[2px] border-[#EAECF0] w-[52px] h-[52px] p-[12px] shadow-[0_1px_2px_0px_rgba(16,24,40,0.05)]"
-                            aria-hidden={true} 
-                        />
-                        <h4 className="text-white text-[20px] leading-[28px] font-[600] py-[16px]">Parts</h4>
-                        <p className="text-white text-[14px] leading-[21px] font-[400]">Find genuine JDM parts and accessories to keep your vehicle in top condition</p>
-                    </div>
+                    
+                        <Card title="Import" desc="Seamlessly import authentic JDM vehicles with our expert handling of all paperwork and compliance"/>
+                        <Card title="JDM auctions" desc="Access exclusive Japanese auctions with our transparent bidding and inspection services."/>  
+                        <Card title="Inventory" desc="Explore our curated selection of in-stock JDM vehicles, ready for immediate purchase"/>  
+                        <Card title="Parts" desc="Find genuine JDM parts and accessories to keep your vehicle in top condition"/>      
+                    
                     </div>
                 </div>
             </div>
