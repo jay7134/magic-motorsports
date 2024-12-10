@@ -1,9 +1,26 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Flickity from 'flickity';
+import 'flickity/css/flickity.css';
 import Card from "../components/Card";
 import Faqs from "../components/Faqs";
 import FeaturedInventory from "../components/FeaturedInventory";
 import Layout from "../components/Layout";
+
 const JapaneseAuctions = ()=>{
+    useEffect(()=>{
+        const flkty = new Flickity('.carousel', {
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            autoPlay: 3000,
+            imagesLoaded: true,
+            prevNextButtons: false,
+            pageDots: true,
+        });
+        return () => flkty.destroy();
+    },[]);
+
     return(
         <Layout>
 
@@ -23,7 +40,7 @@ const JapaneseAuctions = ()=>{
                         src="../images/auctions-1.png"
                         alt=""
                         aria-hidden={true}
-                        className="w-full h-full object-cover max-w-[340px] animate__animated animate__fadeInLeft"
+                        className="w-full h-full object-cover max-w-[340px] pt-[60px] animate__animated animate__fadeInLeft"
                     />
             
                 </div>
@@ -137,8 +154,12 @@ const JapaneseAuctions = ()=>{
                         
                 </div>
 
-                <div className="container">
-                
+                <div className="container pt-[30px]">
+                    <div className="carousel">
+                        <div className="carousel-cell mr-4"><img src="../images/carousel/s1.png"/></div>
+                        <div className="carousel-cell mr-4"><img src="../images/carousel/s2.png"/></div>
+                        <div className="carousel-cell mr-4"><img src="../images/carousel/s3.png"/></div>
+                    </div>
                 </div>
             
             </section>
@@ -172,13 +193,13 @@ const JapaneseAuctions = ()=>{
                             <Card title="Confirm Your Win" desc="Once you win, we guide you through the purchase and import process."/>
                             
                             <Card title="Bid Strategically" desc="Place your bid strategically, considering the auction’s pace and competition"/>
-                        
+                            
                         </div>
                     
                 </div>
             
             </section>
-            
+
             <Faqs/>
 
             <section className="relative overflow-hidden">
@@ -191,13 +212,13 @@ const JapaneseAuctions = ()=>{
                 />
                 <div className="absolute left-0 top-0 w-full h-full before:content-[''] before:bg-black-gradient2 before:absolute before:top-0 before:w-full before:h-full"></div>
                 
-                <div className="container flex flex-col relative justify-between items-start py-[140px] z-[10]">
+                <div className="container flex flex-col relative justify-between items-start pt-[200px] pb-[40px] md:pt-[140px] md:pb-[140px] z-[10]">
                         
                     <h2 className="text-white text-[40px] leading-[48px] md:text-h2 md:leading-[62px] font-[600] sm:max-w-[400px]">
                         Get ready to bid now!
                     </h2>
             
-                    <p className="text-white text-[13px] leading-[19px] md:leading-[27px] md:text-normal font-[400] py-[12px] sm:max-w-[400px]">Register today and start your journey to owning a JDM vehicle</p>
+                    <p className="text-white text-[14px] leading-[19px] md:leading-[27px] md:text-normal font-[400] py-[12px] pb-[32px] sm:max-w-[400px]">Register today and start your journey to owning a JDM vehicle</p>
 
                     <button className="text-white text-sm font-[600] leading-[21px] bg-[#4A0CB6] transition duration-300 hover:bg-[#5e12e3] rounded-lg px-5 h-[48px]">Signup</button>
                                 

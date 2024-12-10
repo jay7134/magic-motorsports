@@ -23,3 +23,7 @@ section{
   z-index: 9;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 17.67%, rgba(0, 0, 0, 0.4) 86.4%);
 }
+.flickity-page-dots{
+  bottom: -20px;
+  z-index: 7;
+}

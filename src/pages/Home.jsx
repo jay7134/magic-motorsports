@@ -13,6 +13,7 @@ import JDMDelivery from "../components/JDMDelivery";
 import Hero from "../components/Hero";
 
 const Home = ()=>{
+    
     return(
 
         <Layout>
