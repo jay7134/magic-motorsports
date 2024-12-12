@@ -1,19 +1,15 @@
 import { useEffect } from "react";
 import Flickity from 'flickity';
 import 'flickity/css/flickity.css';
+import Carousel from "./Carousel";
 
 const FeaturedInventory = ({title,desc})=>{
     
     useEffect(()=>{
         const flkty = new Flickity('.featuredcarousel', {
-            cellAlign: 'left',
             contain: true,
-            wrapAround: true,
             imagesLoaded: true,
-            autoPlay: 3000,
             prevNextButtons: false,
-            freeScroll: true,
-            pageDots: true,
         });
         return () => flkty.destroy();
     },[]);
@@ -27,12 +23,13 @@ const FeaturedInventory = ({title,desc})=>{
                     
                 
             </div>
-            <div className="container">
-                <div className="featuredcarousel pt-[50px] pb-[90px] w-full">
-                        <div className="carousel-cell mr-4"><img src="../images/carousel/s-img1.png"/></div>
-                        <div className="carousel-cell mr-4"><img src="../images/carousel/s-img2.png"/></div>
-                        <div className="carousel-cell mr-4"><img src="../images/carousel/s-img3.png"/></div>
-                    </div>
+            <div className="container pt-[50px] pb-[10px] w-full">
+                <div className="featuredcarousel">
+                       <Carousel/>
+                        {/* <div className="carousel-cell mr-5"><img src="../images/carousel/s-img1.png" className="w-full max-w-[406px]"/></div>
+                        <div className="carousel-cell mr-5"><img src="../images/carousel/s-img2.png" className="w-full max-w-[406px]"/></div>
+                        <div className="carousel-cell mr-5"><img src="../images/carousel/s-img3.png" className="w-full max-w-[406px]"/></div> */}
+                </div>
             </div>
         </section>
     )

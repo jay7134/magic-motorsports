@@ -1,8 +1,8 @@
 const Carousel = ()=>{
     return(
-        <div className="carousel">
-            <div className="carousel-cell mr-4">
-                <div className="relative flex overflow-hidden items-end">
+        <>
+            <div className="carousel-cell pr-5">
+                <div className="relative flex overflow-hidden items-end max-w-[400px] max-h-[440px]">
                         <img 
                             src="../images/featured-1.jpg"
                             alt="Featured Inventory"
@@ -36,8 +36,9 @@ const Carousel = ()=>{
                         </div>
                         </div>
                     </div>
-                    
-                    <div className="relative flex overflow-hidden items-end">
+                </div>
+                <div className="carousel-cell pr-5">    
+                    <div className="relative flex overflow-hidden items-end  max-w-[400px] max-h-[440px]">
                         <img 
                             src="../images/featured-2.jpg"
                             alt="Featured Inventory"
@@ -71,8 +72,9 @@ const Carousel = ()=>{
                         </div>
                         </div>
                     </div>
-
-                    <div className="relative flex overflow-hidden items-end">
+                </div>
+                <div className="carousel-cell pr-5">
+                    <div className="relative flex overflow-hidden items-end  max-w-[400px] max-h-[440px]">
                         <img 
                             src="../images/featured-3.jpg"
                             alt="Featured Inventory"
@@ -107,7 +109,7 @@ const Carousel = ()=>{
                         </div>
                     </div>
             </div>
-        </div>
+        </>
     )
 }
 
