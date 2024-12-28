@@ -5,6 +5,7 @@ import './App.css'
 import Contact from "./pages/Contact";
 import FindVehicle from "./pages/FindVehicle";
 import JapaneseAuctions from "./pages/JapaneseAuctions";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/find-a-vehicle" element={<FindVehicle/>} />
         <Route path="/japanese-auctions" element={<JapaneseAuctions/> } />
         <Route path="/contact-us" element={<Contact/>} />
+        <Route path="/profile" element={<Profile/>} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </Router>
