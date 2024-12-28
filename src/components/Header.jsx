@@ -65,9 +65,11 @@ const Header = ()=>{
                     Contact us
                 </button>
             </Link>
+            <Link to="/profile"> 
             <button className="bg-purple text-white font-[600] px-6 py-3 rounded-lg shadow-2sm border-2 border-purple transition duration-300 hover:bg-purple-light">
                 Log in/Sign Up
             </button>
+            </Link>
             </div>
 
             {/* Mobile Menu Button */}
