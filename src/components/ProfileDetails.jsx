@@ -10,6 +10,7 @@ const ProfileDetails = () => {
                         src="../images/profile-pic.jpg" 
                         alt="profile pic"
                         className="w-full rounded-full"
+                        loading="lazy"
                     />
                     <img 
                         src="../images/verified.png"
