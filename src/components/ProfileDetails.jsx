@@ -59,13 +59,26 @@ const ProfileDetails = () => {
         </div>
         <hr/>
         <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4 md:mr-5">
-            <label className="text-left text-[14px] text-black font-[500] md:w-6/12">Address</label>
-            <input 
-                type="text" 
-                name="address"
-                placeholder="Address"
-                className="w-full text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
-            />
+            <label className="text-left text-[14px] text-black font-[500] md:w-6/12">Port</label>
+            <select className="text-[14px] font-[400] block bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]">
+                <option className="text-[14px] font-[400] text-black">Select Port</option>
+                <option className="text-[14px] font-[400] text-black" value="Baltimore">Baltimore</option>
+                <option className="text-[14px] font-[400] text-black" value="Brunswick">Brunswick</option>
+                <option className="text-[14px] font-[400] text-black" value="Freeport (Texas)">Freeport (Texas)</option>
+                <option className="text-[14px] font-[400] text-black" value="Galveston">Galveston</option>
+                <option className="text-[14px] font-[400] text-black" value="Guam">Guam</option>
+                <option className="text-[14px] font-[400] text-black" value="Honolulu">Honolulu</option>
+                <option className="text-[14px] font-[400] text-black" value="Jacksonville">Jacksonville</option>
+                <option className="text-[14px] font-[400] text-black" value="Long Beach">Long Beach</option>
+                <option className="text-[14px] font-[400] text-black" value="Los Angeles">Los Angeles</option>
+                <option className="text-[14px] font-[400] text-black" value="New York">New York</option>
+                <option className="text-[14px] font-[400] text-black" value="Newport News">Newport News</option>
+                <option className="text-[14px] font-[400] text-black" value="Port Hueneme">Port Hueneme</option>
+                <option className="text-[14px] font-[400] text-black" value="Saipan">Saipan</option>
+                <option className="text-[14px] font-[400] text-black" value="Tacoma">Tacoma</option>
+                <option className="text-[14px] font-[400] text-black" value="Non USA please contact">Non USA please contact</option>
+            </select>
+            
         </div>
         <hr/>
         <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4 md:mr-5">
@@ -96,24 +109,12 @@ const ProfileDetails = () => {
                     className="text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
                 />
 
-                <select className="text-[14px] font-[400] block bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]">
-                    <option className="text-[14px] font-[400] text-black">Select Port</option>
-                    <option className="text-[14px] font-[400] text-black" value="Baltimore">Baltimore</option>
-                    <option className="text-[14px] font-[400] text-black" value="Brunswick">Brunswick</option>
-                    <option className="text-[14px] font-[400] text-black" value="Freeport (Texas)">Freeport (Texas)</option>
-                    <option className="text-[14px] font-[400] text-black" value="Galveston">Galveston</option>
-                    <option className="text-[14px] font-[400] text-black" value="Guam">Guam</option>
-                    <option className="text-[14px] font-[400] text-black" value="Honolulu">Honolulu</option>
-                    <option className="text-[14px] font-[400] text-black" value="Jacksonville">Jacksonville</option>
-                    <option className="text-[14px] font-[400] text-black" value="Long Beach">Long Beach</option>
-                    <option className="text-[14px] font-[400] text-black" value="Los Angeles">Los Angeles</option>
-                    <option className="text-[14px] font-[400] text-black" value="New York">New York</option>
-                    <option className="text-[14px] font-[400] text-black" value="Newport News">Newport News</option>
-                    <option className="text-[14px] font-[400] text-black" value="Port Hueneme">Port Hueneme</option>
-                    <option className="text-[14px] font-[400] text-black" value="Saipan">Saipan</option>
-                    <option className="text-[14px] font-[400] text-black" value="Tacoma">Tacoma</option>
-                    <option className="text-[14px] font-[400] text-black" value="Non USA please contact">Non USA please contact</option>
-                </select>
+                <input 
+                    type="text" 
+                    name="state"
+                    placeholder="State"
+                    className="w-full text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
+                />
 
                 <input 
                     type="text" 
