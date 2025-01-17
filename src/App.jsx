@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import FindVehicle from "./pages/FindVehicle";
 import JapaneseAuctions from "./pages/JapaneseAuctions";
 import Profile from "./pages/Profile";
+import Management from "./pages/Management";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/japanese-auctions" element={<JapaneseAuctions/> } />
         <Route path="/contact-us" element={<Contact/>} />
         <Route path="/profile" element={<Profile/>} />
+        <Route path="/management" element={<Management/>} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </Router>
