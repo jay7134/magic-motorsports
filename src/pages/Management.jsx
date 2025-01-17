@@ -22,20 +22,20 @@ const Management = () => {
 
             <section className="bg-[#f8f8f8] py-[50px]">
                 <div className="container w-10/12 mx-auto bg-white rounded-[12px]">
-                    <div className="flex flex-row gap-3 justify-center mx-auto px-[25px] py-[15px]">
+                    <div className="flex md:flex-row flex-col gap-3 justify-center mx-auto px-[25px] py-[15px]">
                         <button 
                             onClick={()=>setActiveTab(1)}
-                            className={`${activeTab == 1 ? 'bg-[#7962e8] text-white':'text-zinc-600'} text-left text-white text-[14px] focus:outline-none rounded-[4px] px-4 py-2`}>
+                            className={`${activeTab == 1 ? 'bg-[#7962e8] text-white':'text-zinc-600'} text-center text-white text-[14px] focus:outline-none rounded-[4px] px-4 py-2`}>
                             Users Management
                         </button>
                         <button 
                             onClick={()=>setActiveTab(2)}
-                            className={`${activeTab == 2 ? 'bg-[#7962e8] text-white':'text-zinc-600'} text-left text-[14px] focus:outline-none rounded-[4px] px-4 py-2`}>
+                            className={`${activeTab == 2 ? 'bg-[#7962e8] text-white':'text-zinc-600'} text-center text-[14px] focus:outline-none rounded-[4px] px-4 py-2`}>
                             Purchase Management
                         </button>
                         <button 
                             onClick={()=>setActiveTab(3)}
-                            className={`${activeTab == 3 ? 'bg-[#7962e8] text-white':'text-zinc-600'} text-left text-[14px] focus:outline-none rounded-[4px] px-4 py-2`}>
+                            className={`${activeTab == 3 ? 'bg-[#7962e8] text-white':'text-zinc-600'} text-center text-[14px] focus:outline-none rounded-[4px] px-4 py-2`}>
                             Inspection Management
                         </button>
                     </div>

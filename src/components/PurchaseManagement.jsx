@@ -100,14 +100,14 @@ const PurchaseManagement = () => {
       <div>
         <h2 className="text-black text-[18px] font-[500] py-[15px]">Add Purchase</h2>
         <form
-          className="form-container space-y-4 w-[500px]"
+          className="form-container space-y-4 max-w-[500px] w-full"
           onSubmit={(e) => {
             e.preventDefault();
             handleAddPurchase();
           }}
         >
-          <div className="flex items-center space-x-4">
-            <label className="text-left text-[14px] text-black font-[500] w-4/12">Select User</label>
+          <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4">
+            <label className="text-left text-[14px] text-black font-[500] md:w-4/12">Select User</label>
             <select
               className="text-[14px] font-[400] block bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
               value={selectedUserId}
@@ -124,8 +124,8 @@ const PurchaseManagement = () => {
               ))}
             </select>
           </div>
-          <div className="flex items-center space-x-4">
-            <label className="text-left text-[14px] text-black font-[500] w-4/12">Car ID</label>
+          <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4">
+            <label className="text-left text-[14px] text-black font-[500] md:w-4/12">Car ID</label>
             <input
               type="text"
               className="w-full text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
@@ -135,8 +135,8 @@ const PurchaseManagement = () => {
               }
             />
           </div>
-          <div className="flex items-center space-x-4">
-            <label className="text-left text-[14px] text-black font-[500] w-4/12">Payment</label>
+          <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4">
+            <label className="text-left text-[14px] text-black font-[500] md:w-4/12">Payment</label>
             <input
               type="number"
               className="w-full text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
@@ -146,8 +146,8 @@ const PurchaseManagement = () => {
               }
             />
           </div>
-          <div className="flex items-center space-x-4">
-            <label className="text-left text-[14px] text-black font-[500] w-4/12">VIN</label>
+          <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4">
+            <label className="text-left text-[14px] text-black font-[500] md:w-4/12">VIN</label>
             <input
               type="text"
               className="w-full text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
@@ -157,8 +157,8 @@ const PurchaseManagement = () => {
               }
             />
           </div>
-          <div className="flex items-center space-x-4">
-            <label className="text-left text-[14px] text-black font-[500] w-4/12">Purchase Date</label>
+          <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4">
+            <label className="text-left text-[14px] text-black font-[500] md:w-4/12">Purchase Date</label>
             <input
               type="date"
               className="w-full text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
@@ -168,8 +168,8 @@ const PurchaseManagement = () => {
               }
             />
           </div>
-          <div className="flex items-center space-x-4">
-            <label className="text-left text-[14px] text-black font-[500] w-4/12">Invoice (URL)</label>
+          <div className="flex flex-col md:flex-row gap-[5px] md:gap-[20px] md:items-center my-4">
+            <label className="text-left text-[14px] text-black font-[500] md:w-4/12">Invoice (URL)</label>
             <input
               type="text"
               className="w-full text-[14px] font-[400] bg-transparent border boreder-[1px] border-[#e5e7eb] w-full outline-none text-black py-2 px-2 rounded-[8px] mt-[5px]"
@@ -188,7 +188,7 @@ const PurchaseManagement = () => {
       </div>
 
       {/* Display All Purchases */}
-      {purchases && purchases.length >= 0 && (
+      {purchases && purchases.length > 0 && (
       <div>
       <h2 className="text-black text-[18px] font-[500] py-[15px]">All Purchases</h2>
       <table className="min-w-full border-collapse border border-gray-200">
